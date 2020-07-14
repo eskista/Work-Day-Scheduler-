@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- adding bootstrap here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- adding fontawasome  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- adding google fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- adding jQuery here -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+<body>
+  <nav class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A Simple Calendar Application to Schedule Workday</p>
+    <p id="currentDay" class="lead"></p>
+  </nav>
+  <div id="myDiv" class="container">
+    <!-- Timeblocks -->
+    <div class="main-content">
+      <div class="planner-container">
+        <div class="time-slot">
+          <div class="hour">9:00 AM</div>
+          <textarea class="content" id="9"></textarea>
+          <div class="save" id="saveNine" onclick="save('9',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">10:00 AM</div>
+          <textarea class="content" id="10"></textarea>
+          <div class="save" id="saveTen" onclick="save('10',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">11:00 AM</div>
+          <textarea class="content" id="11"></textarea>
+          <div class="save" id="saveEleven" onclick="save('11',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">12:00 AM</div>
+          <textarea class="content" id="12"></textarea>
+          <div class="save" id="saveTwelve" onclick="save('12',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">1:00 PM</div>
+          <textarea class="content" id="13">Work</textarea>
+          <div class="save" id="saveOne" onclick="save('13',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">2:00 PM</div>
+          <textarea class="content" id="14"></textarea>
+          <div class="save" id="saveTwo" onclick="save('14',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">3:00 PM</div>
+          <textarea class="content" id="15"></textarea>
+          <div class="save" id="saveThree" onclick="save('15',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">4:00 PM</div>
+          <textarea class="content" id="16"></textarea>
+          <div class="save" id="saveFour" onclick="save('16',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="hour">5:00 PM</div>
+          <textarea class="content" id="17"></textarea>
+          <div class="save" id="saveFive" onclick="save('17',this.id)"><i class="fas fa-save"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- adding moment.js free JS library (wraps the default JS date object) to better display dates -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+</html>
