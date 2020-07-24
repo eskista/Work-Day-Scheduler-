@@ -1,6 +1,6 @@
 # Project Title
 
-Work-Day Planner/Scheduler
+Work-Day-Scheduler
 
 # Introduction
 
